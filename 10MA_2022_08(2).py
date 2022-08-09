@@ -78,6 +78,7 @@ def trade_with_ma(stock_no='0050.TW',start="2018-01-01",end= "2022-8-7",win=0.09
                         break
                 elif i+j == total_long-1: #期末強平
                     win_loss_ratio.append(Return)
+                    break
     #用MA出場的return                
     ma_return = []
     for i in range(total_long-1): #最後一筆不用check   1~2331(包含2331)
