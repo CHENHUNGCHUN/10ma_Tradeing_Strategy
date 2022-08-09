@@ -4,7 +4,7 @@
 交易設定為准許加碼(同時間可能會有1張以上的持股)
 由於是從yfinance 上下載 所以"只有沒有調整"的價格 也就是說股價分割或配股配息會干擾最後結果
 
-先安裝 yfinance 跟 padas
+先安裝 yfinance 、matplotlib、 padas
 
 參數:
 stock_no 股票代碼 "0050.TW"
