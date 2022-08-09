@@ -18,9 +18,9 @@ def trade_with_ma(stock_no='0050.TW',start="2018-01-01",end= "2022-8-7",win=0.09
     #寫入買賣訊號
     buy_singnal = [0]
     for i in range(1,len(df['price'])):
-        if (df['price'][i-1] <= df['ma'][i-1]) and (df['price'][i] > df['ma'][i]):
+        if (df['price'][i-1] < df['ma'][i-1]) and (df['price'][i] > df['ma'][i]):
             buy_singnal.append(df['price'][i])
-        elif (df['price'][i-1] >= df['ma'][i-1]) and (df['price'][i] < df['ma'][i]):
+        elif (df['price'][i-1] > df['ma'][i-1]) and (df['price'][i] < df['ma'][i]):
             buy_singnal.append(df['price'][i]*-1)
         else:
             buy_singnal.append(0)
