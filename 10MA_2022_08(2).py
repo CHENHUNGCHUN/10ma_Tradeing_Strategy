@@ -124,8 +124,8 @@ def trade_with_ma(stock_no='0050.TW',start="2018-01-01",end= "2022-8-7",win=0.09
     plt.ylabel("account",fontsize=20)
     plt.show()
 
-    return f"\n原始資金為100,進場用{ma}日均線\n用{ma}日均線出場,最後資金為{money1:.2f},總交易次數為{len(ma_return)},勝率為{money1_win*100:.2f}%,最低報酬率{min(ma_return):.2f}%,最高報酬率{max(ma_return):.2f}% \
-        \n用盈虧比出場,最後資金為{money2:.2f},總交易次數為{len(win_loss_ratio)},勝率為{money2_win*100:.2f}%,最低報酬率{min(win_loss_ratio):.2f}%,最高報酬率{max(win_loss_ratio):.2f}%"
+    return f"\n原始資金為100,進場用{ma}日均線\n用{ma}日均線出場,最後資金為{money1:.2f},總交易次數為{len(ma_return)},勝率為{money1_win*100:.2f}%,最低報酬率{min(ma_return)*100:.2f}%,最高報酬率{max(ma_return)*100:.2f}% \
+        \n用盈虧比出場,最後資金為{money2:.2f},總交易次數為{len(win_loss_ratio)},勝率為{money2_win*100:.2f}%,最低報酬率{min(win_loss_ratio)*100:.2f}%,最高報酬率{max(win_loss_ratio)*100:.2f}%"
 #######################################################################################
 import pandas as pd
 import yfinance as yf
